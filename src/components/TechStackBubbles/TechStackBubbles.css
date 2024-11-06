@@ -1,0 +1,24 @@
+/* TechStackBubbles.css */
+.bubble-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f0f0f0; /* Optional: Background color */
+}
+
+.bubble {
+  width: 100px; /* Set a fixed width for the bubble */
+  height: 100px; /* Set a fixed height for the bubble */
+  /* border-radius: 50%; */
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+}
+
+.bubble img {
+  max-width: 100%; /* Scale down to fit the bubble without distortion */
+  max-height: 100%; /* Scale down to fit the bubble without distortion */
+  object-fit: contain; /* Maintain aspect ratio */
+}
