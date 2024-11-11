@@ -13,12 +13,14 @@
   /* border-radius: 50%; */
   overflow: hidden;
   display: flex;
+  flex-direction: column;
+  gap: 2%;
   align-items: center; /* Center the image vertically */
   justify-content: center; /* Center the image horizontally */
 }
 
 .bubble img {
-  max-width: 100%; /* Scale down to fit the bubble without distortion */
-  max-height: 100%; /* Scale down to fit the bubble without distortion */
+  max-width: 80%; /* Scale down to fit the bubble without distortion */
+  max-height: 80%; /* Scale down to fit the bubble without distortion */
   object-fit: contain; /* Maintain aspect ratio */
 }

@@ -92,7 +92,7 @@ export const info = {
         // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm Utkarsh Gangwar. I'm a fullstack developer at Deuglo Infosystem Pvt Ltd. I studied Computer Science at Oriental College of Technology, I have a passion for web development with experience in MERN stack, and I enjoy long walks on the beach.",
+    bio: "Hello! I'm Utkarsh Gangwar. I'm a fullstack developer at Deuglo Infosystem Pvt Ltd. I finished my Bachelor's of engineering from RGPV University (OCT 2020), I have a passion for web development with 3 years of experience in MERN stack, and I enjoy long walks on the beach.",
     skills:
     {
         proficientWith: ['javascript', 'nodejs', 'react', 'redux toolkit', 'react-redux', 'mongodb', 'git', 'github', 'bootstrap', 'html', 'css', 'figma'],

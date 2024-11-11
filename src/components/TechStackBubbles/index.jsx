@@ -14,6 +14,7 @@ import ec2 from '../../img/aws-ec2.png';
 import gcp from '../../img/google-cloud.png';
 import redux from '../../img/redux-original.png'
 import React, { useEffect, useRef, useState } from 'react';
+import { Box } from '@mui/material';
 
 const techStack = [
   { name: 'Node.js', src: nodejs },
@@ -45,6 +46,7 @@ const TechStackBubbles = () => {
     const initialBubbles = techStack.map((tech, index) => ({
       id: index,
       src: tech.src,
+      name: tech.name,
       top: Math.random() * 80 + 10, // Random top position
       left: Math.random() * 80 + 10, // Random left position
       speed: getRandomSpeed(),
@@ -94,7 +96,9 @@ const TechStackBubbles = () => {
             transition: 'none', // Disable CSS transition for smooth animation
           }}
         >
-          <img src={bubble.src} alt="" />
+          <img src={bubble.src} alt={bubble.name} />
+          <Box component={'p'} sx={{color:'text.disabled'}}>{bubble.name}</Box>
+          
         </div>
       ))}
     </div>

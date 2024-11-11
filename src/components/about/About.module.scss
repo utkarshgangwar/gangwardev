@@ -19,3 +19,21 @@
     line-height: 1.75;
   }
 }
+
+.type {
+  background:linear-gradient(#00DFFC 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  background-repeat:no-repeat;
+  animation: t calc(var(--n) * 0.1s) linear 1;
+}
+@keyframes t{
+  from {background-size:0 200%}
+}
+.clip {
+  color:#0000;
+  -webkit-background-clip:text;
+  background-clip:text;
+}
+.step {
+  animation-timing-function:steps(var(--n))
+}
