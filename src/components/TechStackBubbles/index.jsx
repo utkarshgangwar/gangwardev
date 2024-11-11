@@ -98,7 +98,7 @@ const TechStackBubbles = () => {
         >
           <img src={bubble.src} alt={bubble.name} />
           <Box component={'p'} sx={{color:'text.disabled'}}>{bubble.name}</Box>
-          
+          {/* MUI */}
         </div>
       ))}
     </div>
