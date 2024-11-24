@@ -1,7 +1,8 @@
 // TechStackBubbles.js
 import './TechStackBubbles.css';
 import nodejs from '../../img/Node.js_logo.png';
-import react from '../../img/file-type-reactjs.png';
+// import react from '../../img/file-type-reactjs.png';
+import react from '../../img/react.png';
 import mongodb from '../../img/MongoDB_Logo.png';
 import html from '../../img/HTML5_logo_and_wordmark.png';
 import css from '../../img/CSS3_logo_and_wordmark.png';
@@ -13,6 +14,9 @@ import angular from '../../img/Angular_full_color_logo.png';
 import ec2 from '../../img/aws-ec2.png';
 import gcp from '../../img/google-cloud.png';
 import redux from '../../img/redux-original.png'
+import csharp from '../../img/c-sharp.png';
+import mui from '../../img/mui.png';
+import bootstrap5 from '../../img/bootstrap5.webp';
 import React, { useEffect, useRef, useState } from 'react';
 import { Box } from '@mui/material';
 
@@ -30,6 +34,9 @@ const techStack = [
   { name: 'ec2', src: ec2 },
   { name: 'gcp', src: gcp },
   { name: 'redux', src: redux },
+  { name: 'C#', src: csharp },
+  { name: 'MUI', src: mui },
+  { name: 'Bootstrap', src: bootstrap5 }
 ];
 
 
@@ -81,6 +88,7 @@ const TechStackBubbles = () => {
   useEffect(() => {
     animationRef.current = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(animationRef.current); // Cleanup on unmount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -97,7 +105,7 @@ const TechStackBubbles = () => {
           }}
         >
           <img src={bubble.src} alt={bubble.name} />
-          <Box component={'p'} sx={{color:'text.disabled'}}>{bubble.name}</Box>
+          <Box component={'p'} sx={{ color: 'text.disabled' }}>{bubble.name}</Box>
           {/* MUI */}
         </div>
       ))}

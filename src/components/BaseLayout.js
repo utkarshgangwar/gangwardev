@@ -51,7 +51,7 @@ export default function BaseLayout() {
                <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
                   py={'1.5rem'} sx={{ opacity: 0.7 }} width={'100%'}>
                   <p>
-                     version 1 &hearts; by <a href={'https://gangwar.dev'}>Utkarsh Gangwar</a>
+                     version 0.2 &hearts; <a href={'https://gangwar.dev'}>Utkarsh Gangwar</a>
                   </p>
                   <p>&copy; 2024</p>
                </Box>

@@ -1,0 +1,55 @@
+.floatingButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.floatingBtn {
+    background-color: #96d002;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Ensure shimmer stays within the button */
+    transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+        background-color: #0056b3;
+        transform: scale(1.1);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%; /* Start shimmer outside the button */
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(
+            120deg,
+            transparent 25%,
+            rgba(255, 255, 255, 0.6) 50%,
+            transparent 75%
+        );
+        animation: shimmer 2s infinite;
+    }
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}

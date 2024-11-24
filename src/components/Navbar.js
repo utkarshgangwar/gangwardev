@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Style from './Navbar.module.scss';
 import Toggler from "./home/Toggler";
-import { useLocation } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
 import { Box } from "@mui/material";
 import { info } from "../info/Info";
@@ -15,7 +14,7 @@ const links = [
         active: 'home'
     },
     {
-        name: 'About_Me',
+        name: 'About Me',
         to: 'about',
         active: 'about'
     },
@@ -27,7 +26,7 @@ const links = [
         active: 'tech-stack'
     },
     {
-        name: 'Portfolio',
+        name: 'Portfolios',
         to: 'portfolio',
         active: 'portfolio'
     }
@@ -65,6 +64,9 @@ export default function Navbar({ darkMode, handleClick, active, setActive }) {
                 <li>
                     <Toggler darkMode={darkMode} handleClick={handleClick} />
                 </li>
+                {/* <li>
+                    <Toggler darkMode={darkMode} handleClick={handleClick} />
+                </li> */}
             </Box>
         </Box >
     )

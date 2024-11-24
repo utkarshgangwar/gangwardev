@@ -6,6 +6,7 @@ import EmojiBullet from "./EmojiBullet";
 import SocialIcon from "./SocialIcon";
 import { Box } from "@mui/material";
 import { info } from "../../info/Info";
+import FloatingButton from '../floatingButton';
 
 export default function Home({ innerRef }) {
 
@@ -30,6 +31,8 @@ export default function Home({ innerRef }) {
                ))}
             </Box>
          </Box>
+         {/* Floating Button */}
+         <FloatingButton type={'resume'} />
       </Box>
    )
 }

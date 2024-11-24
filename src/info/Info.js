@@ -1,11 +1,11 @@
 import self from "../img/self.png"
-// import mock1 from "../img/mock1.png"
-// import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
-// import mock4 from "../img/mock4.png"
-// import mock5 from "../img/mock5.png"
 import altRadar from '../img/altRadar.png';
 import assistbuddi from '../img/assistbuddi.png';
+import ss from '../img/simpleShiksha.png';
+import picxele from '../img/picxele.png';
+import mooncake from '../img/mooncake.png';
+import nodejs from '../img/Node.js_logo.png';
+import aspdotnet from '../img/aspdotnet.jpg';
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -38,24 +38,28 @@ export const info = {
     baseColor: colors[0],
     miniBio: [
         {
-            "emoji": "☕",
-            "text": "Fueled by JavaScript and a good cup of tea."
-        },
-        {
-            "emoji": "👀",
-            "text": "Passionate about mobile app and web development."
-        },
-        {
             "emoji": "🌎",
             "text": "Based in India."
+        },
+        {
+            "emoji": "☕",
+            "text": "Practicing Javascript and C#"
         },
         {
             "emoji": "💼",
             "text": "Fullstack MERN Developer at Deuglo Infosystem Pvt Ltd."
         },
         {
+            "emoji": "👀",
+            "text": "Passionate about mobile app and web development."
+        },
+        // {
+        //     "emoji": "🧠",
+        //     "text": "Also practicing dot net."
+        // },
+        {
             "emoji": "🤝",
-            "text": "Eager to collaborate on exciting Node.js and React projects."
+            "text": "Eager to collaborate on exciting projects."
         },
         {
             "emoji": "📧",
@@ -69,7 +73,7 @@ export const info = {
         //     label: 'facebook'
         // },
         {
-            link: "https://instagram.com/_u1karsh_",
+            link: "https://instagram.com/wolf_rayet",
             icon: 'fa fa-instagram',
             label: 'instagram'
         },
@@ -88,15 +92,12 @@ export const info = {
             icon: "fa fa-twitter",
             label: 'X'
         }
-        // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
-        // Just change the links so that they lead to your social profiles.
-
     ],
-    bio: "Hello! I'm Utkarsh Gangwar. I'm a fullstack developer at Deuglo Infosystem Pvt Ltd. I finished my Bachelor's of engineering from RGPV University (OCT 2020), I have a passion for web development with 3 years of experience in MERN stack, and I enjoy long walks on the beach.",
+    bio: "Hello, I have completed my Bachelors of Engineering in Computer Science and Engineering from RGPV University (OCT). Currently I am working at Deuglo Infoystem Pvt Ltd as Full Stack developer.",
     skills:
     {
-        proficientWith: ['javascript', 'nodejs', 'react', 'redux toolkit', 'react-redux', 'mongodb', 'git', 'github', 'bootstrap', 'html', 'css', 'figma'],
-        exposedTo: ['c, c++', 'vue.js', 'angular', 'python', 'django', 'sql', 'adobe photoshop']
+        proficientWith: ['javascript', 'c#', 'nodejs', 'react', 'redux toolkit', 'react-redux', 'mongodb', 'git', 'bootstrap', 'Material UI', 'html', 'css', 'figma'],
+        exposedTo: ['dot net', 'c, c++', 'vue.js', 'angular', 'python', 'django', 'mysql', 'adobe photoshop']
     }
     ,
     hobbies: [
@@ -113,44 +114,69 @@ export const info = {
             emoji: '🎥'
         },
         {
-            label: 'cooking',
-            emoji: '🌶'
+            label: 'adventure sports',
+            emoji: '🏄‍♂️'
         }
         // Same as above, change the emojis to match / relate to your hobbies or interests.
         // You can also remove the emojis if you'd like, I just think they look cute :P
     ],
     portfolio: [ // This is where your portfolio projects will be detailed
         {
-            title: "Company Project 1",
+            title: "altRadar",
             live: "https://dev.altradar.org/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             // source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
             image: altRadar,
+            techUsed: 'Worked on both client and server side'
+        },
+        {
+            title: "mooncake",
+            live: "http://3.7.189.17:3000/game/dice-2d", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            // source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
+            image: mooncake,
             about: 'Worked on both client and server side'
         },
         {
-            title: "Company Project 2",
+            title: "Picxele",
+            live: "https://picxele.com/",
+            // source: "https://github.com/paytonjewell",
+            image: picxele
+        },
+        {
+            title: "Assist Buddi",
             live: "https://www.assistbuddi.com/features",
             // source: "https://github.com/paytonjewell",
             image: assistbuddi,
             about: 'Mostly worked on both server side'
         },
         {
-            title: "more projects will be added on version 2",
+            title: "Simple Shiksha",
+            live: "https://www.simpleshiksha.com/",
+            // source: "https://github.com/paytonjewell",
+            image: ss
+        },
+        {
+            title: "Robogenotiater",
             // live: "https://paytonpierce.dev",
             // source: "https://github.com/paytonjewell",
-            image: mock3
+            image: nodejs
         },
-        // {
-        //     title: "Project 4",
-        //     live: "https://paytonpierce.dev",
-        //     source: "https://github.com/paytonjewell",
-        //     image: mock4
-        // },
-        // {
-        //     title: "Project 5",
-        //     live: "https://paytonpierce.dev",
-        //     source: "https://github.com/paytonjewell",
-        //     image: mock5
-        // }
+        {
+            title: "Shoot",
+            // live: "https://paytonpierce.dev",
+            // source: "https://github.com/paytonjewell",
+            image: nodejs
+        },
+        {
+            title: "Car Window Botany",
+            // live: "https://paytonpierce.dev",
+            // source: "https://github.com/paytonjewell",
+            image: nodejs
+        },
+        {
+            title: "asp.net MVC CRUD",
+            // live: "https://paytonpierce.dev",
+            // source: "https://github.com/paytonjewell",
+            image: aspdotnet
+        }
     ]
 }
