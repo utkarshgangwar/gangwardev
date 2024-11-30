@@ -22,12 +22,6 @@ This variable will change the layout of the website from multipage to single, sc
 */
 export let singlePage = false;
 
-/*
-So let's get started! Some of the info below is pretty self-explanatory, like 'firstName' and 'bio'. I'll try to explain anything
-that might not be obvious right off the bat :) I recommend looking at the template example live using "npm start" to get an idea
-of what each of the values mean.
- */
-
 export const info = {
     firstName: "Utkarsh",
     lastName: "Gangwar",
@@ -53,10 +47,10 @@ export const info = {
             "emoji": "👀",
             "text": "Passionate about mobile app and web development."
         },
-        // {
-        //     "emoji": "🧠",
-        //     "text": "Also practicing dot net."
-        // },
+        {
+            "emoji": "🧠",
+            "text": "Also practicing dot net."
+        },
         {
             "emoji": "🤝",
             "text": "Eager to collaborate on exciting projects."
