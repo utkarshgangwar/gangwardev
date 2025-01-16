@@ -16,7 +16,7 @@ export default function Home({ innerRef }) {
          <Helmet>
             <title>Home - My React App</title>
             <meta name="description" content="Welcome to the home page of my React app." />
-            <meta name="keywords" content="React, SEO, Helmet, gangwar, utkarsh" />
+            <meta name="keywords" content="React, SEO, Helmet, gangwar, utkarsh, portfolio, javascript, developer, frontend, react, dev, front-end, tech, programmer" />
             <link rel="canonical" href="https://www.gangwar.dev/" />
             <meta name="robots" content="index, follow" />
             <meta name="author" content="gangwardev" />

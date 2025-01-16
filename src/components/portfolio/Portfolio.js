@@ -9,7 +9,7 @@ export default function Portfolio({ innerRef }) {
             <Helmet>
                 <title>Portfolio</title>
                 <meta name="description" content="Welcome to the portfolio page of my React app." />
-                <meta name="keywords" content="React, SEO, Helmet, gangwar, portfolio, utkarsh" />
+                <meta name="keywords" content="React, SEO, Helmet, gangwar, portfolio, utkarsh, portfolio, javascript, developer, frontend, react, dev, front-end, tech, programmer" />
                 <link rel="canonical" href="https://www.gangwar.dev/portfolio" />
                 <meta name="robots" content="index, follow" />
                 <meta name="author" content="gangwardev" />

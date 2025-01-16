@@ -96,7 +96,7 @@ const TechStackBubbles = () => {
       <Helmet>
         <title>Tech Stack</title>
         <meta name="description" content="Welcome to the tech stack page of my React app." />
-        <meta name="keywords" content="React, SEO, Helmet, gangwar, utkarsh, tech stack, tech, stack" />
+        <meta name="keywords" content="React, SEO, Helmet, gangwar, utkarsh, tech stack, tech, stack, portfolio, javascript, developer, frontend, react, dev, front-end, tech, programmer" />
         <link rel="canonical" href="https://www.gangwar.dev/tech-stack" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="gangwardev" />

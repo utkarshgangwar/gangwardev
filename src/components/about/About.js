@@ -16,7 +16,7 @@ export default function About({ innerRef }) {
                 <Helmet>
                     <title>About</title>
                     <meta name="description" content="Welcome to the about page of my React app." />
-                    <meta name="keywords" content="React, SEO, Helmet, utkarsh, gangwar" />
+                    <meta name="keywords" content="React, SEO, Helmet, utkarsh, gangwar, portfolio, javascript, developer, frontend, react, dev, front-end, tech, programmer" />
                     <link rel="canonical" href="https://www.gangwar.dev/about" />
                     <meta name="robots" content="index, follow" />
                     <meta name="author" content="gangwardev" />
