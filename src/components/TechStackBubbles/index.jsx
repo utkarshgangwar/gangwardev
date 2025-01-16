@@ -19,6 +19,7 @@ import mui from '../../img/mui.png';
 import bootstrap5 from '../../img/bootstrap5.webp';
 import React, { useEffect, useRef, useState } from 'react';
 import { Box } from '@mui/material';
+import { Helmet } from 'react-helmet';
 
 const techStack = [
   { name: 'Node.js', src: nodejs },
