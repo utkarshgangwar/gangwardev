@@ -11,6 +11,9 @@ export default function Portfolio({ innerRef }) {
                 <meta name="description" content="Welcome to the portfolio page of my React app." />
                 <meta name="keywords" content="React, SEO, Helmet, gangwar, portfolio, utkarsh" />
                 <link rel="canonical" href="https://www.gangwar.dev/portfolio" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="gangwardev" />
+                <meta name="publisher" content="Utkarsh Gangwar" />
             </Helmet>
             <Box id={'portfolio'} ref={innerRef}>
                 <Grid container display={'flex'} justifyContent={'flex-start'} padding={'2rem'}>

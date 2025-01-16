@@ -98,6 +98,9 @@ const TechStackBubbles = () => {
         <meta name="description" content="Welcome to the tech stack page of my React app." />
         <meta name="keywords" content="React, SEO, Helmet, gangwar, utkarsh, tech stack, tech, stack" />
         <link rel="canonical" href="https://www.gangwar.dev/tech-stack" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="gangwardev" />
+        <meta name="publisher" content="Utkarsh Gangwar" />
       </Helmet>
       {bubbles.map((bubble) => (
         <div

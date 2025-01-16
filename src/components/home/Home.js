@@ -18,6 +18,9 @@ export default function Home({ innerRef }) {
             <meta name="description" content="Welcome to the home page of my React app." />
             <meta name="keywords" content="React, SEO, Helmet, gangwar, utkarsh" />
             <link rel="canonical" href="https://www.gangwar.dev/" />
+            <meta name="robots" content="index, follow" />
+            <meta name="author" content="gangwardev" />
+            <meta name="publisher" content="Utkarsh Gangwar" />
          </Helmet>
          <Box ref={innerRef} component={'main'} display={'flex'} flexDirection={{ xs: 'column', md: 'row' }} alignItems={'center'}
             justifyContent={'center'} minHeight={'calc(100vh - 175px)'} id={'home'}>
