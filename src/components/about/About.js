@@ -13,6 +13,12 @@ export default function About({ innerRef }) {
 
         return (
             <>
+                <Helmet>
+                    <title>About</title>
+                    <meta name="description" content="Welcome to the about page of my React app." />
+                    <meta name="keywords" content="React, SEO, Helmet, utkarsh, gangwar" />
+                    <link rel="canonical" href="https://www.gangwar.dev/about" />
+                </Helmet>
                 <p><span style={{ color: info.baseColor }}>{firstName}{info.lastName.toLowerCase()} $</span> cat about{firstName} </p>
                 <p><span style={{ color: info.baseColor }}>about{firstName} <span className={Style.green}>(main)</span> $ </span>
                     <span

@@ -93,6 +93,12 @@ const TechStackBubbles = () => {
 
   return (
     <div className="bubble-container">
+      <Helmet>
+        <title>Tech Stack</title>
+        <meta name="description" content="Welcome to the tech stack page of my React app." />
+        <meta name="keywords" content="React, SEO, Helmet, gangwar, utkarsh, tech stack, tech, stack" />
+        <link rel="canonical" href="https://www.gangwar.dev/tech-stack" />
+      </Helmet>
       {bubbles.map((bubble) => (
         <div
           key={bubble.id}

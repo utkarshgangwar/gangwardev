@@ -1,3 +1,14 @@
-# https://www.gangwar.dev/robotstxt.html
+# robots.txt for https://www.gangwar.dev/
+
+# Allow all crawlers full access
 User-agent: *
 Disallow:
+
+# Disallow access to specific directories (if needed)
+Disallow: /cgi-bin/
+
+# Set crawl delay for non-Google bots (if server load is a concern)
+Crawl-delay: 10
+
+# Specify sitemap location
+Sitemap: https://www.gangwar.dev/sitemap.xml

@@ -6,6 +6,12 @@ import { info } from "../../info/Info";
 export default function Portfolio({ innerRef }) {
     return (
         <>
+            <Helmet>
+                <title>Portfolio</title>
+                <meta name="description" content="Welcome to the portfolio page of my React app." />
+                <meta name="keywords" content="React, SEO, Helmet, gangwar, portfolio, utkarsh" />
+                <link rel="canonical" href="https://www.gangwar.dev/portfolio" />
+            </Helmet>
             <Box id={'portfolio'} ref={innerRef}>
                 <Grid container display={'flex'} justifyContent={'flex-start'} padding={'2rem'}>
                     {info.portfolio.map((project, index) => (
