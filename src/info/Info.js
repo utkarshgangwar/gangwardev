@@ -6,6 +6,9 @@ import picxele from '../img/picxele.png';
 import mooncake from '../img/mooncake.png';
 import nodejs from '../img/Node.js_logo.png';
 import aspdotnet from '../img/aspdotnet.jpg';
+import leetcode from '../assets/leetcode.svg';
+import hrmsWsr from '../img/hrms-wsr.webp';
+import cwb from '../img/logo.png';
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -37,40 +40,36 @@ export const info = {
         },
         {
             "emoji": "☕",
-            "text": "Practicing Javascript and C#"
+            "text": "Javascript and C#"
         },
         {
             "emoji": "💼",
-            "text": "Fullstack MERN Developer at Deuglo Infosystem Pvt Ltd."
+            "text": "Fullstack Developer"
+        },
+        {
+            "emoji": "🧠",
+            "text": "Also practicing asp dot net."
+        },
+        {
+            "emoji": "📧",
+            "text": "Reach out at utkarshonwork@gmail.com."
         },
         {
             "emoji": "👀",
             "text": "Passionate about mobile app and web development."
         },
-        {
-            "emoji": "🧠",
-            "text": "Also practicing dot net."
-        },
-        {
-            "emoji": "🤝",
-            "text": "Eager to collaborate on exciting projects."
-        },
-        {
-            "emoji": "📧",
-            "text": "Reach out at utkarshonwork@gmail.com."
-        }
     ],
     socials: [
-        // {
-        //     link: "https://facebook.com",
-        //     icon: 'fa fa-facebook',
-        //     label: 'facebook'
-        // },
         {
-            link: "https://instagram.com/wolf_rayet",
-            icon: 'fa fa-instagram',
-            label: 'instagram'
+            link: "https://leetcode.com/u/gangwarutkarsh/",
+            icon: leetcode,
+            label: 'leetcode'
         },
+        // {
+        //     link: "https://instagram.com/wolf_rayet",
+        //     icon: 'fa fa-instagram',
+        //     label: 'instagram'
+        // },
         {
             link: "https://github.com/utkarshgangwar",
             icon: "fa fa-github",
@@ -87,10 +86,10 @@ export const info = {
             label: 'X'
         }
     ],
-    bio: "Hello, I have completed my Bachelors of Engineering in Computer Science and Engineering from RGPV University (OCT). Currently I am working at Deuglo Infoystem Pvt Ltd as Full Stack developer.",
+    bio: "Hello, I have completed my Bachelors of Engineering in Computer Science and Engineering from RGPV University (OCT). Currently I am working as Full Stack developer.",
     skills:
     {
-        proficientWith: ['javascript', 'c#', 'nodejs', 'react', 'redux toolkit', 'react-redux', 'mongodb', 'git', 'bootstrap', 'Material UI', 'html', 'css', 'figma'],
+        proficientWith: ['javascript', 'c#', 'nodejs', 'react', 'redux toolkit', 'react-redux', 'mongodb', 'git', 'bootstrap', 'Material UI', 'tailwind', 'html', 'css', 'figma'],
         exposedTo: ['dot net', 'c, c++', 'vue.js', 'angular', 'python', 'django', 'mysql', 'adobe photoshop']
     }
     ,
@@ -116,24 +115,28 @@ export const info = {
     ],
     portfolio: [ // This is where your portfolio projects will be detailed
         {
+            title: "HRMS/WSR",
+            // live: "https://dev.altradar.org/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            // source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
+            image: hrmsWsr,
+        },
+        {
             title: "altRadar",
             live: "https://dev.altradar.org/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             // source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
             image: altRadar,
-            techUsed: 'Worked on both client and server side'
         },
         {
             title: "mooncake",
             live: "http://3.7.189.17:3000/game/dice-2d", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             // source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
             image: mooncake,
-            about: 'Worked on both client and server side'
         },
         {
             title: "Picxele",
             live: "https://picxele.com/",
             // source: "https://github.com/paytonjewell",
-            image: picxele
+            image: picxele,
         },
         {
             title: "Assist Buddi",
@@ -164,13 +167,21 @@ export const info = {
             title: "Car Window Botany",
             // live: "https://paytonpierce.dev",
             // source: "https://github.com/paytonjewell",
-            image: nodejs
+            image: cwb
         },
         {
             title: "asp.net MVC CRUD",
             // live: "https://paytonpierce.dev",
             // source: "https://github.com/paytonjewell",
             image: aspdotnet
+        }
+        ,
+        {
+            title: "Portfolio Website",
+            // live: "https://paytonpierce.dev",
+            // source: "https://github.com/paytonjewell",
+            image: nodejs,
+            live: "https://www.gangwar.dev/"
         }
     ]
 }

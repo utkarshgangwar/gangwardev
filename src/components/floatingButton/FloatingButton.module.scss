@@ -5,6 +5,14 @@
     z-index: 1000;
 }
 
+.resume {
+    bottom: 20px;
+}
+
+.whatsapp {
+    bottom: 15%;
+}
+
 .floatingBtn {
     background-color: #96d002;
     color: white;
@@ -19,7 +27,8 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     position: relative;
-    overflow: hidden; /* Ensure shimmer stays within the button */
+    overflow: hidden;
+    /* Ensure shimmer stays within the button */
     transition: background-color 0.3s, transform 0.3s;
 
     &:hover {
@@ -31,15 +40,14 @@
         content: '';
         position: absolute;
         top: 0;
-        left: -100%; /* Start shimmer outside the button */
+        left: -100%;
+        /* Start shimmer outside the button */
         width: 200%;
         height: 100%;
-        background: linear-gradient(
-            120deg,
-            transparent 25%,
-            rgba(255, 255, 255, 0.6) 50%,
-            transparent 75%
-        );
+        background: linear-gradient(120deg,
+                transparent 25%,
+                rgba(255, 255, 255, 0.6) 50%,
+                transparent 75%);
         animation: shimmer 2s infinite;
     }
 }
@@ -49,6 +57,7 @@
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(100%);
     }

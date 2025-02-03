@@ -1,45 +1,45 @@
 // TechStackBubbles.js
-import './TechStackBubbles.css';
-import nodejs from '../../img/Node.js_logo.png';
-// import react from '../../img/file-type-reactjs.png';
-import react from '../../img/react.png';
-import mongodb from '../../img/MongoDB_Logo.png';
-import html from '../../img/HTML5_logo_and_wordmark.png';
-import css from '../../img/CSS3_logo_and_wordmark.png';
-import sql from '../../img/Sql_data_base_with_logo.png';
-import c from '../../img/C_Programming_Language.png';
-import cplus from '../../img/ISO_C++_Logo.png';
-import vue from '../../img/Vue.js_Logo_2.png';
-import angular from '../../img/Angular_full_color_logo.png';
-import ec2 from '../../img/aws-ec2.png';
-import gcp from '../../img/google-cloud.png';
-import redux from '../../img/redux-original.png'
-import csharp from '../../img/c-sharp.png';
-import mui from '../../img/mui.png';
-import bootstrap5 from '../../img/bootstrap5.webp';
-import React, { useEffect, useRef, useState } from 'react';
-import { Box } from '@mui/material';
-import { Helmet } from 'react-helmet';
+import "./TechStackBubbles.css";
+import nodejs from "../../img/Node.js_logo.png";
+import react from "../../img/react.png";
+import mongodb from "../../img/MongoDB_Logo.png";
+import html from "../../img/HTML5_logo_and_wordmark.png";
+import css from "../../img/CSS3_logo_and_wordmark.png";
+import sql from "../../img/Sql_data_base_with_logo.png";
+import c from "../../img/C_Programming_Language.png";
+import cplus from "../../img/ISO_C++_Logo.png";
+import vue from "../../img/Vue.js_Logo_2.png";
+import angular from "../../img/Angular_full_color_logo.png";
+import ec2 from "../../img/aws-ec2.png";
+import gcp from "../../img/google-cloud.png";
+import redux from "../../img/redux-original.png";
+import csharp from "../../img/c-sharp.png";
+import mui from "../../img/mui.png";
+import bootstrap5 from "../../img/bootstrap5.webp";
+import tailwindCss from "../../img/7577995.webp";
+import React, { useEffect, useRef, useState } from "react";
+import { Box } from "@mui/material";
+import { Helmet } from "react-helmet";
 
 const techStack = [
-  { name: 'Node.js', src: nodejs },
-  { name: 'React.js', src: react },
-  { name: 'MongoDB', src: mongodb },
-  { name: 'HTML', src: html },
-  { name: 'CSS', src: css },
-  { name: 'SQL', src: sql },
-  { name: 'C', src: c },
-  { name: 'C++', src: cplus },
-  { name: 'Vue.js', src: vue },
-  { name: 'Angular.js', src: angular },
-  { name: 'ec2', src: ec2 },
-  { name: 'gcp', src: gcp },
-  { name: 'redux', src: redux },
-  { name: 'C#', src: csharp },
-  { name: 'MUI', src: mui },
-  { name: 'Bootstrap', src: bootstrap5 }
+  { name: "NODE.JS", src: nodejs },
+  { name: "REACT.JS", src: react },
+  { name: "MongoDB", src: mongodb },
+  { name: "HTML", src: html },
+  { name: "CSS", src: css },
+  { name: "MySQL", src: sql },
+  { name: "C", src: c },
+  { name: "C++", src: cplus },
+  // { name: "Vue.js", src: vue },
+  { name: "Angular.js", src: angular },
+  { name: "AWS EC2", src: ec2 },
+  { name: "GCP", src: gcp },
+  { name: "Redux Toolkit", src: redux },
+  { name: "C#", src: csharp },
+  { name: "MUI", src: mui },
+  { name: "Bootstrap", src: bootstrap5 },
+  { name: "Tailwind CSS", src: tailwindCss },
 ];
-
 
 const getRandomSpeed = () => ({
   x: (Math.random() - 0.2) * 2, // Speed between -1 and 1
@@ -96,8 +96,14 @@ const TechStackBubbles = () => {
     <div className="bubble-container">
       <Helmet>
         <title>Tech Stack</title>
-        <meta name="description" content="Welcome to the tech stack page of my React app." />
-        <meta name="keywords" content="React, SEO, Helmet, gangwar, utkarsh, tech stack, tech, stack, portfolio, javascript, developer, frontend, react, dev, front-end, tech, programmer" />
+        <meta
+          name="description"
+          content="Welcome to the tech stack page of my React app."
+        />
+        <meta
+          name="keywords"
+          content="React, SEO, Helmet, gangwar, utkarsh, tech stack, tech, stack, portfolio, javascript, developer, frontend, react, dev, front-end, tech, programmer"
+        />
         <link rel="canonical" href="https://www.gangwar.dev/tech-stack" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="gangwardev" />
@@ -110,12 +116,20 @@ const TechStackBubbles = () => {
           style={{
             top: `${bubble.top}px`,
             left: `${bubble.left}px`,
-            position: 'absolute',
-            transition: 'none', // Disable CSS transition for smooth animation
+            position: "absolute",
+            transition: "none", // Disable CSS transition for smooth animation
           }}
         >
           <img src={bubble.src} alt={bubble.name} />
-          <Box component={'p'} sx={{ color: 'text.disabled' }}>{bubble.name}</Box>
+          <Box component={"p"} sx={{ color: "text.disabled" }}>
+            <span
+              style={{
+                fontWeight: "bold",
+              }}
+            >
+              {bubble.name}
+            </span>
+          </Box>
           {/* MUI */}
         </div>
       ))}

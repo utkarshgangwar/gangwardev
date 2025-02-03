@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Style from './BaseLayout.module.scss'
 import Navbar from "./Navbar";
 import { useLocation } from "react-router-dom";
@@ -18,6 +18,7 @@ export default function BaseLayout() {
    const refTechStack = useScrollObserver(setActive);
    let [darkMode, setDarkMode] = useState(false);
 
+   const year = useMemo(() => new Date().getFullYear(), []);
 
 
    function handleToggleDarkMode() {
@@ -51,9 +52,9 @@ export default function BaseLayout() {
                <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
                   py={'1.5rem'} sx={{ opacity: 0.7 }} width={'100%'}>
                   <p>
-                     version 0.2 &hearts; <a href={'https://gangwar.dev'}>Utkarsh Gangwar</a>
+                     version 0.3 &hearts; <a href={'https://gangwar.dev'}>Utkarsh Gangwar</a>
                   </p>
-                  <p>&copy; 2024</p>
+                  <p>&copy; {year}</p>
                </Box>
             </Grid>
          </Grid>

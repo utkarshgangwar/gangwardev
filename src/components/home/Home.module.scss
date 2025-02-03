@@ -72,3 +72,12 @@ a:hover {
     transform: rotate(0.0deg)
   }
 }
+
+.fade-img {
+  opacity: 0.5; /* Adjust as needed */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-img:hover {
+  opacity: 1; /* Restore opacity on hover */
+}

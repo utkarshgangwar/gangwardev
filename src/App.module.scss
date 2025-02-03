@@ -1,3 +1,39 @@
+/* Global Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Width for vertical scrollbar */
+    height: 8px;
+    /* Height for horizontal scrollbar */
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    /* Light background */
+    border-radius: 10px;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    /* Modern gradient effect */
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #0056b3, #0094cc);
+    /* Darker shade on hover */
+}
+
+/* Firefox Custom Scrollbar */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #007bff #f0f0f0;
+    /* Handle and track colors */
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 @import "./variables.modules";
 
@@ -36,4 +72,35 @@ img {
 
 ul {
     list-style-type: none;
+}
+
+/* Global Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px; /* Width for vertical scrollbar */
+    height: 10px; /* Height for horizontal scrollbar */
+    border-radius: 10px;
+}
+
+/* Scrollbar Track (Background) */
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Scrollbar Handle (Thumb) */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #8fc5ff, #00d4ff); /* Modern gradient */
+    border-radius: 50px; /* Fully rounded scrollbar */
+    transition: background 0.3s ease-in-out;
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #61a6ef, #0094cc); /* Darker shade on hover */
+}
+
+/* Firefox Custom Scrollbar */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #d19c5f #f0f0f0; /* Handle and track colors */
 }
