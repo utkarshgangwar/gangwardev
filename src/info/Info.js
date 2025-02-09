@@ -128,7 +128,7 @@ export const info = {
         },
         {
             title: "mooncake",
-            live: "http://3.7.189.17:3000/game/dice-2d", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            live: "http://3.7.189.17:3000/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             // source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
             image: mooncake,
         },

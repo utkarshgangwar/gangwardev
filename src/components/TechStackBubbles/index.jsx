@@ -8,7 +8,7 @@ import css from "../../img/CSS3_logo_and_wordmark.png";
 import sql from "../../img/Sql_data_base_with_logo.png";
 import c from "../../img/C_Programming_Language.png";
 import cplus from "../../img/ISO_C++_Logo.png";
-import vue from "../../img/Vue.js_Logo_2.png";
+// import vue from "../../img/Vue.js_Logo_2.png";
 import angular from "../../img/Angular_full_color_logo.png";
 import ec2 from "../../img/aws-ec2.png";
 import gcp from "../../img/google-cloud.png";
